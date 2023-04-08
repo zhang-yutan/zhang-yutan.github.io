@@ -1,0 +1,49 @@
+body {
+    background-color: ivory; text-align: justify; max-width:60em; 
+    margin:auto;
+}
+
+html { text-size-adjust: auto; zoom:100%;  }
+
+
+
+#main {
+    width: 58%;
+    margin-right: 2%;
+}
+
+#pic {
+    width: 38%;
+    margin-left: 2%;
+    float: right;
+    position: relative;
+    top: -1em;
+}
+
+
+@media (max-width: 767px)
+{
+#main {
+    width: 100%;
+    margin: 0;
+}
+
+#pic {
+    width: 100%;
+    top: 0;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    float: none;
+}
+}
+
+
+
+
+
+hr.solid {
+  border: 0;
+  border-top: 1px solid #8c8c8c;
+  border-bottom: 1px solid #fff;
+}
+
