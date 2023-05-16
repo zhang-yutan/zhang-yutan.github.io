@@ -3,7 +3,11 @@ body {
     margin:auto;
 }
 
-html { text-size-adjust: auto; zoom:100%;  }
+h1 {
+    font-family:'Times New Roman', Times, serif, STFangsong, 'Microsoft YaHei';
+}
+
+html { text-size-adjust:auto; zoom:100%;  }
 
 
 
@@ -46,4 +50,3 @@ hr.solid {
   border-top: 1px solid #8c8c8c;
   border-bottom: 1px solid #fff;
 }
-
