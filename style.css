@@ -3,8 +3,12 @@ body {
     margin:auto;
 }
 
-h1 {
-    font-family:'Times New Roman', Times, serif, STFangsong, 'Microsoft YaHei';
+body {
+    font-family:"Times New Roman", Times, serif, "Microsoft YaHei", STFangsong;
+    font-variant-ligatures:historical-ligatures;
+    font-variant-alternates:historical-forms;
+    font-feature-settings: "hlig" 1, "dlig" 1;
+    font-variant:inherit;
 }
 
 html { text-size-adjust:auto; zoom:100%;  }
