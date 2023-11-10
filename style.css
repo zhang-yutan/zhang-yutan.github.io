@@ -48,9 +48,26 @@ html { text-size-adjust:auto; zoom:100%;  }
 
 
 
-
 hr.solid {
   border: 0;
   border-top: 1px solid #8c8c8c;
   border-bottom: 1px solid #fff;
+}
+
+
+.blocklinks {
+    font-variant: small-caps;
+    text-decoration:none;
+    font-size: 11pt;
+    color: #0C2340;
+    font-weight: normal;
+}
+
+a.blocklinks:hover {
+    color:#AE9142;
+    text-decoration:underline;
+}
+
+a:hover {
+    color:#0C2340;
 }
