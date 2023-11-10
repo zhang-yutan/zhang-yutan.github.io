@@ -9,6 +9,7 @@
         <meta name="author" content="Yutan Zhang">
         <title>Performance Recommendations</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script language="javascript" src="scripts.js"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script"
         async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -59,7 +60,10 @@
                 Here is a selected list of significant live performances I have
                 been to. 
             </p>
-            <ol>
+            <p>
+                <script language="javascript">writeperformanceblockq(1)</script>
+            </p>
+            <ol id="perf1" class="spacylist" style="display:block">
                 <li>
                     <b>Jewels</b>.
                     National Ballet of China, 2020
@@ -117,7 +121,7 @@
                 </li>
                 <li>
                     <b>Mahler Symphony No.2</b>.
-                    Shanghai Philharmonic Orchestra, 2020
+                    Zhang Yi, Shanghai Philharmonic Orchestra, 2020
                 </li>
                 <li>
                     <b>Mahler Symphony No.1</b>.
@@ -227,10 +231,20 @@
                 <a href="https://karajan.org/" target="_blank"
                 rel="noopener noreferrer">website</a>.
             </p>
+            <p>
+                <!--ids reserved 2 - 40-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:void(0);" class="blocklinks"
+                onclick="var i; for (i=2; i<=19; i++) {showblock('perf'+i);}">Show all</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:void(0);" class="blocklinks"
+                onclick="var i; for (i=2; i<=19; i++) {hideblock('perf'+i);}">Hide all</a>
+            </p>
             <ol>
                 <li>
                     <b>Johann Sebastian Bach</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(2)</script>
+                    <ul id="perf2" class="spacylist" style="display:block">
                         <li>
                             <i>Brandenburg Concertos No.1-6</i>, BWV 1046-1051.
                             <ul>
@@ -301,7 +315,8 @@
                 </li>
                 <li>
                     <b>Ludwig van Beethoven</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(3)</script>
+                    <ul id="perf3" class="spacylist" style="display:block">
                         <li>
                             <i>Discovering Beethoven</i>. (documentaries)
                             (HIGHLY recommended)
@@ -506,7 +521,8 @@
                 </li>
                 <li>
                     <b>Wolfgang Amadeus Mozart</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(4)</script>
+                    <ul id="perf4" class="spacylist" style="display:block">
                         <li>
                             <i>Complete Symphonies</i>.
                             <ul>
@@ -620,7 +636,8 @@
                 </li>
                 <li>
                     <b>Pyotr Ilyich Tchaikovsky</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(5)</script>
+                    <ul id="perf5" class="spacylist" style="display:block">
                         <li>
                             <i>Complete Symphonies</i>.
                             <ul>
@@ -757,7 +774,8 @@
                 </li>
                 <li>
                     <b>Johannes Brahms</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(6)</script>
+                    <ul id="perf6" class="spacylist" style="display:block">
                         <li>
                             <i>Complete Symphonies</i>.
                             <ul>
@@ -831,7 +849,8 @@
                 </li>
                 <li>
                     <b>Gustav Mahler</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(7)</script>
+                    <ul id="perf7" class="spacylist" style="display:block">
                         <li>
                             <i>Complete Symphonies</i>.
                             <ul>
@@ -946,7 +965,8 @@
                 </li>
                 <li>
                     <b>Josef Anton Bruckner</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(8)</script>
+                    <ul id="perf8" class="spacylist" style="display:block">
                         <li>
                             <i>Complete Symphonies</i>.
                             <ul>
@@ -1038,7 +1058,8 @@
                 </li>
                 <li>
                     <b>Richard Strauss</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(9)</script>
+                    <ul id="perf9" class="spacylist" style="display:block">
                         <li>
                             <i>Eine Alpensinfonie</i>, Op.64.
                             <ul>
@@ -1100,7 +1121,8 @@
                 </li>
                 <li>
                     <b>Jean Sibelius</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(10)</script>
+                    <ul id="perf10" class="spacylist" style="display:block">
                         <li>
                             <i>Violin Concerto in D Minor</i>, Op.47.
                             <ul>
@@ -1148,7 +1170,8 @@
                 </li>
                 <li>
                     <b>Felix Mendelssohn Bartholdy</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(11)</script>
+                    <ul id="perf11" class="spacylist" style="display:block">
                         <li>
                             <i>Violin Concerto in E Minor</i>, Op.64.
                             <ul>
@@ -1180,7 +1203,8 @@
                 </li>
                 <li>
                     <b>Antonín Leopold Dvořák</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(12)</script>
+                    <ul id="perf12" class="spacylist" style="display:block">
                         <li>
                             <i>Cello Concerto in B Minor</i>, Op.104.
                             <ul>
@@ -1227,7 +1251,8 @@
                 </li>
                 <li>
                     <b>Franz Schubert</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(13)</script>
+                    <ul id="perf13" class="spacylist" style="display:block">
                         <li>
                             <i>Symphony No.9 in C Major</i>, D 944.
                             <ul>
@@ -1255,7 +1280,8 @@
                 </li>
                 <li>
                     <b>Bedřich Smetana</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(14)</script>
+                    <ul id="perf14" class="spacylist" style="display:block">
                         <li>
                             <i>Má vlast</i>.
                             <ul>
@@ -1270,7 +1296,8 @@
                 </li>
                 <li>
                     <b>Modest Petrovich Mussorgsky</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(15)</script>
+                    <ul id="perf15" class="spacylist" style="display:block">
                         <li>
                             <i>Pictures at an Exhibition</i>.
                             <ul>
@@ -1288,7 +1315,8 @@
                 </li>
                 <li>
                     <b>Ottorino Respighi</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(16)</script>
+                    <ul id="perf16" class="spacylist" style="display:block">
                         <li>
                             <i>Pini di Roma</i>, P 141.
                             <ul>
@@ -1316,7 +1344,8 @@
                 </li>
                 <li>
                     <b>Georg Friederich Händel</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(17)</script>
+                    <ul id="perf17" class="spacylist" style="display:block">
                         <li>
                             <i>Feuerwerksmusik</i>, HWV 351.
                             <ul>
@@ -1339,7 +1368,8 @@
                 </li>
                 <li>
                     <b>Franz Joseph Haydn</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(18)</script>
+                    <ul id="perf18" class="spacylist" style="display:block">
                         <li>
                             <i>String Quartets Op.76 No.1-4</i>.
                             <ul>
@@ -1354,7 +1384,8 @@
                 </li>
                 <li>
                     <b>The Strauss family</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(19)</script>
+                    <ul id="perf19" class="spacylist" style="display:block">
                         <li>
                             <i>Wien Nach Noten</i>. (movies) (HIGHLY recommended)
                             <ul>
@@ -1427,10 +1458,20 @@
                 provide in-depth analysis and discussion of
                 the artistic styles of these great choreographers. 
             </p>
+            <p>
+                <!--ids reserved 41 - 80-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:void(0);" class="blocklinks"
+                onclick="var i; for (i=41; i<=64; i++) {showblock('perf'+i);}">Show all</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:void(0);" class="blocklinks"
+                onclick="var i; for (i=41; i<=64; i++) {hideblock('perf'+i);}">Hide all</a>
+            </p>
             <ol>
                 <li>
                     <b>Giselle</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(41)</script>
+                    <ul id="perf41" class="spacylist" style="display:block">
                         <li>
                             The Royal Ballet, Alina Cojocaru, Marianela Nuñez, 2006.
                         </li>
@@ -1448,7 +1489,8 @@
                 </li>
                 <li>
                     <b>Swan Lake</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(42)</script>
+                    <ul id="perf42" class="spacylist" style="display:block">
                         <li>
                             Mariinsky Theatre Ballet, Ulyana Lopatkina,
                             Olesya Novikova, Evgenia Obraztsova, 2006.
@@ -1487,7 +1529,8 @@
                 </li>
                 <li>
                     <b>The Nutcracker</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(43)</script>
+                    <ul id="perf43" class="spacylist" style="display:block">
                         <li>
                             Bolshoi Theatre Ballet, Nina Kaptsova, 2010.
                         </li>
@@ -1519,7 +1562,8 @@
                 </li>
                 <li>
                     <b>The Sleeping Beauty</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(44)</script>
+                    <ul id="perf44" class="spacylist" style="display:block">
                         <li>
                             Bolshoi Theatre Ballet, Svetlana Zakharova,
                             Nina Kaptsova, 2011.
@@ -1547,7 +1591,8 @@
                 </li>
                 <li>
                     <b>Don Quixote</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(45)</script>
+                    <ul id="perf45" class="spacylist" style="display:block">
                         <li>
                             Mariinsky Theatre Ballet, Olesya Novikova,
                             Alina Somova, Evgenia Obraztsova, 2006.
@@ -1567,7 +1612,8 @@
                 </li>
                 <li>
                     <b>Jewels</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(46)</script>
+                    <ul id="perf46" class="spacylist" style="display:block">
                         <li>
                             Mariinsky Theatre Ballet, Irina Golub,
                             Ulyana Lopatkina, 2011.
@@ -1576,7 +1622,8 @@
                 </li>
                 <li>
                     <b>Coppélia</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(47)</script>
+                    <ul id="perf47" class="spacylist" style="display:block">
                         <li>
                             Bolshoi Theatre Ballet, Nina Kaptsova, 2011.
                         </li>
@@ -1588,7 +1635,8 @@
                 </li>
                 <li>
                     <b>Les Flammes de Paris</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(48)</script>
+                    <ul id="perf48" class="spacylist" style="display:block">
                         <li>
                             Bolshoi Theatre Ballet, Natalia Osipova, Denis Savin,
                             Nina Kaptsova, 2010.
@@ -1597,7 +1645,8 @@
                 </li>
                 <li>
                     <b>Le Corsaire</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(49)</script>
+                    <ul id="perf49" class="spacylist" style="display:block">
                         <li>
                             Bolshoi Theatre Ballet, Svetlana Lunkina,
                             Nina Kaptsova, 2012.
@@ -1610,7 +1659,8 @@
                 </li>
                 <li>
                     <b>The Pharaoh's Daughter</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(50)</script>
+                    <ul id="perf50" class="spacylist" style="display:block">
                         <li>
                             Bolshoi Ballet Theatre, Svetlana Zakharova,
                             Nina Kaptsova, 2012.
@@ -1619,7 +1669,8 @@
                 </li>
                 <li>
                     <b>The Dream</b> (A Midsummer Night's Dream)
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(51)</script>
+                    <ul id="perf51" class="spacylist" style="display:block">
                         <li>
                             American Ballet Theatre, Alessandra Ferri, 2004.
                         </li>
@@ -1627,7 +1678,8 @@
                 </li>
                 <li>
                     <b>Anna Karenina</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(52)</script>
+                    <ul id="perf52" class="spacylist" style="display:block">
                         <li>
                             Bolshoi Theatre Ballet, Maya Plisetskaya, 1974. (movie)
                         </li>
@@ -1638,7 +1690,8 @@
                 </li>
                 <li>
                     <b>Concerto Barocco</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(53)</script>
+                    <ul id="perf53" class="spacylist" style="display:block">
                         <li>
                             New York City Ballet, Patricia McBride,
                             Carol Sumner, 1973. (movie)
@@ -1651,7 +1704,8 @@
                 </li>
                 <li>
                     <b>Serenade</b> (Tchaikovsky)
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(54)</script>
+                    <ul id="perf54" class="spacylist" style="display:block">
                         <li>
                             New York City Ballet, Darci Kistler, Kyra Nichols,
                             Maria Calegari, 1990. (movie)
@@ -1664,7 +1718,8 @@
                 </li>
                 <li>
                     <b>Ballet Imperial (Tchaikovsky Piano Concerto No.2)</b> 
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(55)</script>
+                    <ul id="perf55" class="spacylist" style="display:block">
                         <li>
                             Ballet de l'Opéra national de Paris, Hannah O'Neill,
                             2023.
@@ -1685,7 +1740,8 @@
                 </li>
                 <li>
                     <b>Les Sylphides (Chopiniana)</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(56)</script>
+                    <ul id="perf56" class="spacylist" style="display:block">
                         <li>
                             American Ballet Theatre, Cynthia Harvey,
                             Mikhail Baryshnikov, 1984.
@@ -1710,7 +1766,8 @@
                 </li>
                 <li>
                     <b>Paquita</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(57)</script>
+                    <ul id="perf57" class="spacylist" style="display:block">
                         <li>
                             The Kirov Ballet, Yulia Makhalina, Yelena Pankova,
                             Irina Zhelonkina, Lyubov Kunakova, Larissa Lezhnina,
@@ -1720,7 +1777,8 @@
                 </li>
                 <li>
                     <b>Symphony in C Major</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(58)</script>
+                    <ul id="perf58" class="spacylist" style="display:block">
                         <li>
                             Mariinsky Theatre Ballet, Yulia Makhalina, 1996.
                         </li>
@@ -1736,7 +1794,8 @@
                 </li>
                 <li>
                     <b>Theme and Variations</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(59)</script>
+                    <ul id="perf59" class="spacylist" style="display:block">
                         <li>
                             American Ballet Theatre, Gelsey Kirkland,
                             Mikhail Baryshnikov, 1978.
@@ -1745,7 +1804,8 @@
                 </li>
                 <li>
                     <b>Études</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(60)</script>
+                    <ul id="perf60" class="spacylist" style="display:block">
                         <li>
                             Ballet de l'Opéra national de Paris,
                             Dorothée Gilbert, 2014.
@@ -1754,7 +1814,8 @@
                 </li>
                 <li>
                     <b>Vienna Waltzes</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(61)</script>
+                    <ul id="perf61" class="spacylist" style="display:block">
                         <li>
                             New York City Ballet, Kyra Nichols, Heather Watts,
                             Karin von Aroldingen, Suzanne Farrell, 1983.
@@ -1763,7 +1824,8 @@
                 </li>
                 <li>
                     <b>Mozartiana</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(62)</script>
+                    <ul id="perf62" class="spacylist" style="display:block">
                         <li>
                             New York City Ballet, Suzanne Farrell, 1983.
                         </li>
@@ -1771,7 +1833,8 @@
                 </li>
                 <li>
                     <b>ABT at the MET 1984</b> (gala).
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(63)</script>
+                    <ul id="perf63" class="spacylist" style="display:block">
                         <li>
                             Mikhail Baryshnikov, Cynthia Harvey, Martine van Hamel,
                             Cynthia Gregory.
@@ -1781,7 +1844,8 @@
                 <li>
                     <b>NeujahrsKonzert Ballet</b>, Wiener Staatsballett,
                     Wiener Philharmoniker. (movies)
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(64)</script>
+                    <ul id="perf64" class="spacylist" style="display:block">
                         <li>
                             1987 - Johann Strauss II - Kaiserwalzer, Op.437 -
                             Herbert von Karajan.
@@ -1866,10 +1930,20 @@
                 than performance recordings. They will be marked, and are
                 strongly recommended. 
             </p>
+            <p>
+                <!--ids reserved 81 - 100-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:void(0);" class="blocklinks"
+                onclick="var i; for (i=81; i<=88; i++) {showblock('perf'+i);}">Show all</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:void(0);" class="blocklinks"
+                onclick="var i; for (i=81; i<=88; i++) {hideblock('perf'+i);}">Hide all</a>
+            </p>
             <ol>
                 <li>
                     <b>Wolfgang Amadeus Mozart</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(81)</script>
+                    <ul id="perf81" class="spacylist" style="display:block">
                         <li>
                             <i>Die Zauberflöte</i>, K 620.
                             <ul>
@@ -1957,7 +2031,8 @@
                 </li>
                 <li>
                     <b>Richard Wagner</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(82)</script>
+                    <ul id="perf82" class="spacylist" style="display:block">
                         <li>
                             <i>Der Ring des Nibelungen</i>, WWV 86.
                             <ul>
@@ -2035,7 +2110,8 @@
                 </li>
                 <li>
                     <b>Georges Bizet</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(83)</script>
+                    <ul id="perf83" class="spacylist" style="display:block">
                         <li>
                             <i>Carmen</i>.
                             <ul>
@@ -2057,7 +2133,8 @@
                 </li>
                 <li>
                     <b>Richard Strauss</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(84)</script>
+                    <ul id="perf84" class="spacylist" style="display:block">
                         <li>
                             <i>Der Rosenkavalier</i>, Op.59.
                             <ul>
@@ -2073,7 +2150,8 @@
                 </li>
                 <li>
                     <b>Giuseppe Verdi</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(85)</script>
+                    <ul id="perf85" class="spacylist" style="display:block">
                         <li>
                             <i>Rigoletto</i>.
                             <ul>
@@ -2097,7 +2175,8 @@
                 </li>
                 <li>
                     <b>Johann Strauss II</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(86)</script>
+                    <ul id="perf86" class="spacylist" style="display:block">
                         <li>
                             <i>Die Fledermaus</i>.
                             <ul>
@@ -2121,7 +2200,8 @@
                 </li>
                 <li>
                     <b>Jacques Offenbach</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(87)</script>
+                    <ul id="perf87" class="spacylist" style="display:block">
                         <li>
                             <i>Les Contes d'Hoffmann</i>.
                             <ul>
@@ -2136,7 +2216,8 @@
                 </li>
                 <li>
                     <b>Ludwig van Beethoven</b>
-                    <ul>
+                    <script language="javascript">writeperformanceblockq(88)</script>
+                    <ul id="perf88" class="spacylist" style="display:block">
                         <li>
                             <i>Fidelio</i>, Op.72.
                             <ul>
@@ -2158,7 +2239,10 @@
                 Here I organize by skating program in a non-specific order.
                 The majority have links to high quality videos.
             </p>
-            <ol>
+            <p>
+                <script language="javascript">writeperformanceblockq(101)</script>
+            </p>
+            <ol id="perf101" class="spacylist" style="display:block">
                 <li>
                     <b>Carmen on Ice</b>.
                     (Movie) Katarina Witt, Brian Boitano, Brian Orser, 1990.
@@ -2287,7 +2371,7 @@
         <small>
             <a href="index.html">Back to homepage of ZYT</a>
             <p>This page is maintained by Yutan Zhang (ZYT).</p>
-            <p>This page is last updated on 2023/10/22.</p>
+            <p>This page is last updated on 2023/11/11.</p>
         </small>
     </body>
 </html>
